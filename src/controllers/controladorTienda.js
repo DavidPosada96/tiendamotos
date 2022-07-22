@@ -28,7 +28,7 @@ contenedor-addEventListener("click", function(evento){
    
     //almacenar en el localstorage la informacion del producto seleccionado
 
-    this.localStorage.setItem('infoProducto',5)
+    localStorage.setItem('infoProducto',JSON.stringify(producto))
 
     console.log(localStorage.getItem('infoProducto'))
 

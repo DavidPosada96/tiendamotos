@@ -38,6 +38,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                   <a class="nav-link" href="#">Pricing</a>
                   <a class="nav-link disabled">Disabled</a>
                 </div>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active " aria-current="page" href="#"><i class="bi bi-cart fs-4"></i></a>
+                    <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">
+                        99+
+                
+                  </div>
               </div>
             </div>
         </nav>
@@ -49,11 +55,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <div class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-5">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/davidtiendatcc.appspot.com/o/nkd.png?alt=media&token=32b279e4-69dd-4afb-bc4e-468f60e746af', 'https://firebasestorage.googleapis.com/v0/b/davidtiendatcc.appspot.com/o/nkd.png?alt=media&token=32b279e4-69dd-4afb-bc4e-468f60e746af" alt="" class="img-fluid w-100">
+                        <img id="foto" src="" alt="" class="img-fluid w-100">
                     </div>
                     <div class="col-12 col-md-6 border-start">
-                        <h3>AKT NKD 125</h3>
-                        <h4>4990999</h4>
+                        <h3 id="nombre"></h3>
+                        <h4 id="precio"></h4>
+                        <p id="descripcion"></p>
+                        <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -74,10 +82,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                     <br>
                     <div class="mb-3">
                      <label class="from label">cantidad</label>
-                     <input type="number" placeholder="1" id="cantidad" min="1">
+                     <input type="number" placeholder="1" id="cantidad" value="1">
                     </div>
                     <br>
-                    <BUtton type="button" class="btn btn-primary">añadir al carrito</BUtton>
+                    <button id="agregar" type="button" class="btn btn-primary">añadir al carrito</button>
                     </div>
                 </div>
             </div>
@@ -90,6 +98,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
     </footer>
 
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="../controllers/controladorCompra.js"></script>
 </body>
 </html>

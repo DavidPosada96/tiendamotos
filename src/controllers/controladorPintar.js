@@ -30,7 +30,7 @@ export function pintarProductos (productos){
 
         //2.6creamos la descripcion
         let descripcion = document.createElement("p")
-        descripcion.classList.add("d.none")
+        descripcion.classList.add("d-none")
         descripcion.textContent = producto.descripcion
 
         //deteccion de mouse
@@ -40,6 +40,10 @@ export function pintarProductos (productos){
         })
 
         columna.addEventListener("mouseleave", function(evento){
+            foto.src=producto.foto[0]
+        })
+
+        columna.addEventListener("click", function(evento){
             foto.src=producto.foto[0]
         })
 
