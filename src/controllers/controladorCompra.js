@@ -49,10 +49,17 @@ botonAgregar.addEventListener("click", function (evento){
     producto.cantidad=cantidad
     console.log(producto)
 
+    let alerta =document.getElementById("alerta")
+    alerta.classList.remove("invisible")
+
+    setTimeout(function(){
+        alerta.classList.add("invisible")
+    },3000)
+
     //agregando un nuevo elemento a un arreglo
     //agregando un producto al carrito de compras
     carrito.push(producto)
-    //alamaceno el carrito en el localstorage
+    //almaceno el carrito en el localstorage
     localStorage.setItem("carrito",JSON.stringify(carrito))
 
 
